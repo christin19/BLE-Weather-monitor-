@@ -10,7 +10,7 @@ Table of Contents
 - [Code Explanation](#code-explanation)
 Introduction
 
-This project uses the ESP32 microcontroller and the DFRobot DHT11 sensor to measure temperature and humidity. The data is then transmitted over Bluetooth Low Energy (BLE) to a connected device, such as a smartphone or tablet.
+This project uses the ESP32 microcontroller and the DFRobot DHT11 sensor to measure temperature and humidity. The data is then transmitted over Bluetooth Low Energy (BLE) to a connected device.
 
 Hardware Requirements
 
@@ -33,7 +33,7 @@ The Service UUID and Cheracterstics UUID  same as given doc
 
 Installation
 
-1. Install the ESP32 board package in Arduino IDE. Follow the instructions [here](https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md).
+1. Install the ESP32 board package in Arduino IDE. Follow the instructions (https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md).
 2. Install the required libraries:
    - Open Arduino IDE.
    - Go to `Sketch` -> `Include Library` -> `Manage Libraries`.
@@ -65,7 +65,7 @@ BLE Setup
 
 The `initBLE` function initializes the BLE device and sets up the server, service, and characteristics. It also starts advertising the BLE service.
 
-### Reading Sensor Data
+Reading Sensor Data
 
 The `loop` function reads the temperature and humidity data from the DHT11 sensor every second. If a BLE device is connected, it sends the data as notifications.
 
